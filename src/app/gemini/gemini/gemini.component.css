@@ -1,0 +1,56 @@
+.grid-container {
+    display: grid;
+
+    height: 100vh;
+    width: 100%;
+    row-gap: 0.2rem;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.item{
+    background-color: aqua;
+    border: 2px solid black;
+}
+.header {
+    background-color: orange;
+    text-align: center;
+    /* height: 5rem; */
+  
+}
+
+
+.main-content {
+    /* grid-area: main-content; */
+    background-color: rgb(181, 18, 231);
+    text-align: center;
+    /* height: 20px; */
+}
+
+
+.footer {
+    /* grid-area: footer; */
+    background-color: yellowgreen;
+    text-align: center;
+    /* height: 6rem; */
+}
+
+.footer-input {
+    padding: 10px;
+    margin-right: 10px;
+    width: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    transform: translateY(2px); /* Slightly moves the input down */
+}
+
+.footer-button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-button:hover {
+    background-color: #0056b3;
+}

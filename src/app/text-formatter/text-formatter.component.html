@@ -1,0 +1,122 @@
+<!-- <div>
+  <h2>Text Transformation</h2>
+  
+
+  <textarea [(ngModel)]="input" (input)="onInputChange()" placeholder="Enter text here..." rows="4" cols="50"></textarea>
+  <br>
+
+  <button (click)="onInputChange()">Transform Text</button>
+  <button (click)="copy()">Copy Transformed Text</button>
+
+  <p>Transformed Text:</p>
+  <p>{{ transformedText }}</p>
+</div> -->
+
+
+<div class="container">
+    <div class="textBox">
+      <h1>Text Evevator</h1>
+    <textarea class="text-area" [(ngModel)]="inputText" (input)="onInputTextChange($event)" placeholder="Write your text here... Your text will be automatically formatted as you type!"></textarea>
+    
+    </div>
+    <div class="emoji-container">
+      <button class="add-emojis" (click)="getData()">Add Emojis</button>
+    </div>
+  
+  <div class="formatting-options">
+    <div class="formatter">
+      <div class="format-option">
+        <h3>Normal</h3>
+        <p class="text"><span>{{ linkedInSans }}</span></p>
+        <button (click)="copy('linkedInSans')" >Copy text</button>
+      </div>
+      <div class="format-option">
+        <h3>bold</h3>
+        <p class="text"><span>{{ bold }}</span></p>
+        <button (click)="copy('bold')">Copy text</button>
+      </div>
+      <div class="format-option">
+        <h3>Bold Sans</h3>
+        <p class="text"><span>{{ transformedText }}</span></p>
+        <button (click)="copy('boldSans')">Copy text</button>
+      </div>
+      <div class="format-option">
+        <h3>Bold Italic Sans</h3>
+        <p class="text"><span>{{ boldItalicSans }}</span></p>
+        <button (click)="copy('boldItalicSans')">Copy text</button>
+      </div>
+      <div class="format-option">
+        <h3>Italic</h3>
+        <p class="text"><span>{{ italic }}</span></p>
+        <button (click)="copy('italic')">Copy text</button>
+      </div>
+      <div class="format-option">
+        <h3>Italic Sans</h3>
+        <!-- <p>{{ italicSans }}</p> -->
+        <p class="text"><span>{{ italicSans }}</span></p>
+        <button (click)="copy('italicSans')">Copy text</button>
+      </div>
+      <div class="format-option">
+        <h3>Script</h3>
+        <!-- <p>{{ script }}</p> -->
+        <p class="text"><span>{{ script }}</span></p>
+        <button (click)="copy('script')">Copy text</button>
+      </div>
+      
+      <div class="format-option">
+        <h3>Sans</h3>
+        <p class="text"><span>{{ sans }}</span></p>
+        <button (click)="copy('sans')">Copy Text</button>
+      </div>
+      <div class="format-option">
+        <h3>full Width</h3>
+        <p class="text"><span>{{ fullWidth }}</span></p>
+        <button (click)="copy('fullWidth')">Copy Text</button>
+      </div>
+  
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="formatter">
+    <div class="format-option">
+      <h3>Normal</h3>
+      <p class="text"><span>{{ text }}</span></p>
+      <button (click)="copyText(text)">Copy text</button>
+    </div>
+    <div class="format-option">
+      <h3>Bold</h3>
+      <p><strong class="copied-bold">{{ text }}</strong></p>
+      <button (click)="copyBold(text)">Copy text</button>
+    </div>
+    <div class="format-option">
+      <h3>Italic</h3>
+      <p><em>{{ text }}</em></p>
+      <button (click)="copyText(text)">Copy text</button>
+    </div>
+    <div class="format-option">
+      <h3>Bold Italic</h3>
+      <p><strong><em>{{ text }}</em></strong></p>
+      <button (click)="copyText(text)">Copy text</button>
+    </div>
+    <div class="format-option">
+      <h3>Bold Sans</h3>
+      <p style="font-family: 'Arial Black', sans-serif;">{{ text }}</p>
+      <button (click)="copyText(text)">Copy text</button>
+    </div>
+    <div class="format-option">
+      <h3>Italic Sans</h3>
+      <p style="font-family: 'Arial', sans-serif; font-style: italic;">{{ text }}</p>
+      <button (click)="copyText(text)">Copy text</button>
+    </div>
+
+  </div> -->
